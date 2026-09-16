@@ -1,0 +1,74 @@
+/* ==========================================
+   1. RESET & FONT CONFIGURATION
+========================================== */
+/* Import Google Fonts Lexend Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+/* Pengunci Font Lexend Deca di Seluruh Komponen */
+* {
+    font-family: 'Lexend Deca', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif !important;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* ==========================================
+   2. VARIABLE WARNA
+========================================== */
+:root {
+    --primary-blue: #0073e6;
+    --primary-blue-hover: #005bb5;
+    --bg-light: #EEF3F8;
+    --text-dark: #222222;
+}
+
+
+.custom-nav-link {
+    color: #212529 !important;
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-nav-link.active, 
+.custom-nav-link:hover {
+    color: var(--primary-blue) !important; 
+    font-weight: 700 !important;
+}  
+
+/* ==========================================
+   3. HERO SECTION STYLING
+========================================== */
+.hero-section {
+    background: url('../assets/images/sekolah.jpg') center/cover no-repeat;
+    height: 80vh;
+    min-height: 480px;
+    scroll-margin-top: 60px;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay transparan agar teks terbaca */
+}
+
+.about-section {
+    scroll-margin-top: 60px;
+}
+
+.jurusan-section {
+    scroll-margin-top: 60px;
+}
+
+.berita-section {
+    scroll-margin-top: 60px;
+}
+
+.galeri-section {
+    scroll-margin-top: 60px;
+}
+
+.kontak-section {
+    scroll-margin-top: 60px;
+}
+

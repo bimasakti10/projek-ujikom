@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Lexend Deca', sans-serif !important;
+}
+
+body {
+    background-color: #EEF3F8;
+    font-family: 'Lexend Deca', sans-serif !important;
+}
+
+/* Sidebar Biru Solid */
+.sidebar-admin {
+    width: 280px;
+    min-height: 100vh;
+    background-color: #0d77e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.sidebar-title {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+/* Menu Navigasi Sidebar */
+.nav-admin-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
+}
+
+.nav-admin-link.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: 500;
+}
+
+/* Tombol Keluar */
+.btn-keluar {
+    background-color: #c90000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 28px;
+    font-weight: 600;
+}
+
+/* Card Statistik Dashboard (Ukuran Besar & Presisi Figma) */
+.card-stat {
+    background-color: #0d77e2;
+    color: #ffffff;
+    border-radius: 24px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(13, 119, 226, 0.2);
+}
+
+.card-stat i {
+    font-size: 3.2rem;
+}
+
+.card-stat .stat-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.card-stat .stat-count {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 4px;
+}
