@@ -4,7 +4,7 @@
             
             <!-- Kolom 1: Branding -->
             <div class="col-12 col-md-5">
-                <h4 class="fw-bold mb-3">SMKN Buman</h4>
+                <h4 class="fw-bold mb-3">SMKN 4</h4>
                 <p class="small opacity-75 mb-4" style="max-width: 320px;">
                     Mewujudkan lulusan yang unggul, berkarakter, serta siap bersaing di dunia industri dan perguruan tinggi.
                 </p>
@@ -61,6 +61,6 @@
         </div>
 
         <hr class="my-4 opacity-25">
-        <p class="text-center small opacity-75 mb-0">&copy; {{ date('Y') }} SMKN Buman Bogor. All rights reserved.</p>
+        <p class="text-center small opacity-75 mb-0">&copy; {{ date('Y') }} SMKN 4 Bogor. All rights reserved.</p>
     </div>
 </footer>

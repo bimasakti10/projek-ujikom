@@ -28,7 +28,7 @@ class BeritaAdminController extends Controller
             'judul'     => 'required|string|max:255',
             'kategori'  => 'required',
             'tanggal'   => 'required|date',
-            'gambar'    => 'required|image|mimes:jpeg,png,jpg,gif|max:10240',
+            'gambar'    => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
             'deskripsi' => 'required',
         ]);
 
@@ -61,7 +61,7 @@ class BeritaAdminController extends Controller
             'judul'     => 'required|string|max:255',
             'kategori'  => 'required',
             'tanggal'   => 'required|date',
-            'gambar'    => 'nullable|image|mimes:jpeg,png,jpg,gif|max:10240',
+            'gambar'    => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
             'deskripsi' => 'required',
         ]);
 

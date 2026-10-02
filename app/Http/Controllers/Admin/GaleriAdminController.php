@@ -33,7 +33,7 @@ class GaleriAdminController extends Controller
         $request->validate([
             'judul' => 'required|string|max:255',
             'tanggal' => 'required|date',
-            'gambar' => 'required|image|mimes:jpg,png,jpeg|max:10240',
+            'gambar' => 'required|image|mimes:jpg,png,jpeg,webp|max:10240',
         ]);
 
         $gambarPath = $request->file('gambar')->store('galeri', 'public');
@@ -64,7 +64,7 @@ class GaleriAdminController extends Controller
         $request->validate([
             'judul' => 'required|string|max:255',
             'tanggal' => 'required|date',
-            'gambar' => 'required|image|mimes:jpg,png,jpeg|max:10240',
+            'gambar' => 'required|image|mimes:jpg,png,jpeg,webp|max:10240',
         ]);
 
         if ($request->hasFile('gambar')) {

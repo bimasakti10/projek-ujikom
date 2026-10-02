@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
     <head>
-        <title>SMKN Buman Bogor</title>
+        <title>Ruang Empat</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,6 +22,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="{{ asset('css/style.css') }}?v=1.0">
+        <link rel="shortcut icon" href="{{ asset('assets/images/logo.ico') }}">
+        
     </head>
 
     <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="100" tabin-dex="0">

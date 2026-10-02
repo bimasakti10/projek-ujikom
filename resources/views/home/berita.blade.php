@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', ' Berita - SMKN Buman Bogor')
+@section('title', ' Berita - SMKN 4 Bogor')
 
 @section('content')
 <section class="container py-5 text-center">
@@ -8,7 +8,7 @@
     <!-- Header Section -->
     <h2 class="fw-bold text-dark mb-2">Berita Sekolah</h2>
     <p class="text-secondary mb-4 mx-auto" style="max-width: 600px;">
-        Dokumentasi lengkap kegiatan, prestasi, dan aktivitas SMKN Buman Bogor.
+        Dokumentasi lengkap kegiatan, prestasi, dan aktivitas SMKN 4 Bogor.
     </p>
 
     <!-- Tombol Filter JS -->

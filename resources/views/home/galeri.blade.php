@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Galeri Sekolah - SMKN Buman Bogor')
+@section('title', 'Galeri Sekolah - SMKN 4 Bogor')
 
 @section('content')
 <section class="galeri-page py-5">
@@ -8,7 +8,7 @@
         
         <h2 class="fw-bold text-dark mb-2" style="font-size: 2.2rem;">Galeri Sekolah</h2>
         <p class="text-secondary mb-5 fs-6" style="max-width: 650px; margin: 0 auto;">
-            Dokumentasi kegiatan, prestasi, fasilitas, dan berbagai aktivitas siswa di SMKN Buman Bogor.
+            Dokumentasi kegiatan, prestasi, fasilitas, dan berbagai aktivitas siswa di SMKN 4 Bogor.
         </p>
 
         <!-- Grid Galeri -->

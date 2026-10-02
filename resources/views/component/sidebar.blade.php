@@ -2,7 +2,7 @@
      style="width: 280px; background-color: #0d77e2; z-index: 1000;">
     
     <!-- Logo / Judul Admin -->
-    <h3 class="fw-bold text-white mb-5">Admin<br>Smkn Buman</h3>
+    <h3 class="fw-bold text-white mb-5">Admin<br>Smkn 4 Bogor</h3>
 
     <!-- Menu Navigation -->
     <ul class="nav nav-pills flex-column mb-auto gap-2">
@@ -22,6 +22,12 @@
             <a href="{{ route('admin.galeri.galeri') }}" 
                class="nav-link text-white {{ request()->routeIs('admin.galeri.*') ? 'active bg-white bg-opacity-25 text-primary fw-bold' : '' }} rounded-3 px-3 py-2">
                 Galeri
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('admin.ulasan.index') }}" 
+               class="nav-link text-white {{ request()->routeIs('admin.ulasan.*') ? 'active bg-white bg-opacity-25 text-primary fw-bold' : '' }} rounded-3 px-3 py-2">
+                Ulasan
             </a>
         </li>
     </ul>

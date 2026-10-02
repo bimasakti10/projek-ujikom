@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <title>@yield('title', 'Admin Dashboard - SMKN Buman Bogor')</title>
+    <title>@yield('title', 'Admin Dashboard - SMKN 4 Bogor')</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +20,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}?v=1.0">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo.ico') }}">
 </head>
 
 <body class="bg-light">

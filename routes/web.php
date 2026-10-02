@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BeritaAdminController;
 use App\Http\Controllers\Admin\GaleriAdminController;
+use App\Http\Controllers\Admin\UlasanController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -37,3 +38,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::delete('/galeri/{id}', [GaleriAdminController::class, 'destroy'])->name('galeri.destroy');
 });
  
+Route::post('/tanggapan/kirim', [UlasanController::class, 'store'])->name('ulasan.store');
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/ulasan', [UlasanController::class, 'index'])->name('ulasan.index');
+    Route::delete('/ulasan/{id}', [UlasanController::class, 'destroy'])->name('ulasan.destroy');
+});

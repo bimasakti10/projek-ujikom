@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $berita->judul . ' - SMKN Buman Bogor')
+@section('title', $berita->judul . ' - SMKN 4 Bogor')
 
 @section('content')
 <section class="py-5" style="background-color: #EEF3F8;">
@@ -26,7 +26,7 @@
                 <img src="{{ asset('storage/' . $berita->gambar) }}" 
                      class="img-fluid rounded-4 shadow" 
                      alt="{{ $berita->judul }}" 
-                     style="max-height: 420px; width: 100%; object-fit: cover;">
+                     style=" width: 100%; object-fit: auto;">
             </div>
 
             <!-- 4. Metadata (Tanggal & Penulis) -->
@@ -48,8 +48,8 @@
 
         <!-- Tombol Navigasi Kembali -->
         <div class="text-center mt-4">
-            <a href="{{ route('galeri') }}" class="text-secondary text-decoration-none fw-medium">
-                &lt; kembali beranda
+            <a href="{{ route('berita') }}" class="text-secondary text-decoration-none fw-medium">
+                &lt; kembali Berita
             </a>
         </div>
 
