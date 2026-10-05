@@ -254,7 +254,7 @@
 </section>
 
 <!-- Bagian Produk di Home -->
-<section class="py-5 bg-light">
+<section id="produk" class="produk-section py-5">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold">Produk Sekolah</h2>

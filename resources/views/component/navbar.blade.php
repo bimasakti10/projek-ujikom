@@ -52,10 +52,10 @@
                     <a class="nav-link custom-nav-link fw-medium" href="#tentang">Tentang Sekolah</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link fw-medium" href="#jurusan">Jurusan</a>
+                    <a class="nav-link custom-nav-link fw-medium" href="#berita">Berita</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link fw-medium" href="#berita">Berita</a>
+                    <a class="nav-link custom-nav-link fw-medium" href="#produk">Produk</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link custom-nav-link fw-medium" href="#galeri">Galeri</a>

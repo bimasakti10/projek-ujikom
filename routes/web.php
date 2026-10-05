@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\BeritaAdminController;
 use App\Http\Controllers\Admin\GaleriAdminController;
 use App\Http\Controllers\Admin\UlasanController;
 use App\Http\Controllers\Admin\ProdukAdminController;
+use App\Http\Controllers\Admin\AkunController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -54,4 +55,12 @@ Route::post('/tanggapan/kirim', [UlasanController::class, 'store'])->name('ulasa
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/ulasan', [UlasanController::class, 'index'])->name('ulasan.index');
     Route::delete('/ulasan/{id}', [UlasanController::class, 'destroy'])->name('ulasan.destroy');
+});
+
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+
+    Route::get('/akun', [App\Http\Controllers\Admin\AkunController::class, 'index'])->name('akun.akun');
+    Route::get('/akun/password', [App\Http\Controllers\Admin\AkunController::class, 'editPassword'])->name('akun.password.edit');
+    Route::post('/akun/password', [App\Http\Controllers\Admin\AkunController::class, 'updatePassword'])->name('akun.password.update');
+    
 });
