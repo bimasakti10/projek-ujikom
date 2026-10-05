@@ -18,6 +18,12 @@
                 Berita
             </a>
         </li>
+                <li class="nav-item">
+            <a href="{{ route('admin.produk.produk') }}" 
+               class="nav-link text-white {{ request()->routeIs('admin.produk.*') ? 'active bg-white bg-opacity-25 text-primary fw-bold' : '' }} rounded-3 px-3 py-2">
+                Produk
+            </a>
+        </li>
         <li class="nav-item">
             <a href="{{ route('admin.galeri.galeri') }}" 
                class="nav-link text-white {{ request()->routeIs('admin.galeri.*') ? 'active bg-white bg-opacity-25 text-primary fw-bold' : '' }} rounded-3 px-3 py-2">

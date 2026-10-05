@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BeritaAdminController;
 use App\Http\Controllers\Admin\GaleriAdminController;
 use App\Http\Controllers\Admin\UlasanController;
+use App\Http\Controllers\Admin\ProdukAdminController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -14,6 +15,9 @@ Route::get('/berita', [HomeController::class, 'berita'])->name('berita');
 Route::get('/berita/{id}', [HomeController::class, 'detail'])->name('berita.detail');
 
 Route::get('/galeri', [HomeController::class, 'galeri'])->name('galeri');
+
+Route::get('/produk', [HomeController::class, 'produk'])->name('produk');
+Route::get('/produk/{id}', [HomeController::class, 'detailProduk'])->name('produk.detail');
 
 Route::get('/login', [AuthController::class, 'showlogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.perform');
@@ -36,6 +40,13 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/galeri/{id}/edit', [GaleriAdminController::class, 'edit'])->name('galeri.edit');
     Route::put('/galeri/{id}', [GaleriAdminController::class, 'update'])->name('galeri.update');
     Route::delete('/galeri/{id}', [GaleriAdminController::class, 'destroy'])->name('galeri.destroy');
+
+    Route::get('/produk', [ProdukAdminController::class, 'index'])->name('produk.produk');
+    Route::get('/produk/create', [ProdukAdminController::class, 'create'])->name('produk.create');
+    Route::post('/produk', [ProdukAdminController::class, 'store'])->name('produk.store');
+    Route::get('/produk/{id}/edit', [ProdukAdminController::class, 'edit'])->name('produk.edit');
+    Route::put('/produk/{id}', [ProdukAdminController::class, 'update'])->name('produk.update');
+    Route::delete('/produk/{id}', [ProdukAdminController::class, 'destroy'])->name('produk.destroy');
 });
  
 Route::post('/tanggapan/kirim', [UlasanController::class, 'store'])->name('ulasan.store');

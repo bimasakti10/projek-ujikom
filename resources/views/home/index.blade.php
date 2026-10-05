@@ -253,6 +253,54 @@
     </a>
 </section>
 
+<!-- Bagian Produk di Home -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Produk Sekolah</h2>
+      <p class="text-muted">Ruang informasi seputar agenda sekolah dan apresiasi bakat siswa.</p>
+    </div>
+
+    <!-- Grid 3 Kolom dengan Looping Data Produk -->
+    <div class="row g-4 mb-4">
+      
+      @forelse($produks as $item)
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 transition-hover">
+          <!-- Gambar Produk Dinamis -->
+          <img src="{{ asset('storage/' . $item->gambar) }}" class="card-img-top p-3 object-fit-contain" alt="{{ $item->judul }}" style="height: 250px;">
+          
+          <div class="card-body p-0 pt-3 d-flex flex-column">
+            <!-- Judul Produk -->
+            <h6 class="fw-bold mb-1">{{ $item->judul }}</h6>
+            <!-- Deskripsi Singkat (Dibatasi 50 karakter) -->
+            <p class="text-muted small mb-3 flex-grow-1">{{ Str::limit($item->deskripsi, 50) }}</p>
+            
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+              <!-- Harga Format Rupiah -->
+              <span class="fw-bold text-primary">Rp{{ number_format($item->harga, 0, ',', '.') }}</span>
+              <!-- Link ke Route Detail -->
+              <a href="{{ route('produk.detail', $item->id) }}" class="text-dark text-decoration-none small fw-medium">Beli disini &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      @empty
+      <!-- Tampilan kalau belum ada produk yang diinput sama admin -->
+      <div class="col-12 text-center py-4">
+          <p class="text-muted mb-0">Belum ada produk yang tersedia saat ini.</p>
+      </div>
+      @endforelse
+
+    </div>
+
+    <div class="text-center">
+      <!-- Route ke Halaman Semua Produk -->
+      <a href="{{ route('produk') }}" class="btn btn-primary px-4 py-2 rounded-3">Lihat Semua Produk</a>
+    </div>
+  </div>
+</section>
+
 <!-- SECTION GALERI SEKOLAH -->
 <section id="galeri" class="galeri-section py-5">
     <div class="container text-center">

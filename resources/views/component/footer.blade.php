@@ -51,7 +51,7 @@
                             </div>
                             <div class="d-flex align-items-center gap-2">
                                 <i class="bi bi-envelope-fill"></i>
-                                <span>info@smkn4bogor.sch.id</span>
+                                <span> ruang4sch.id</span>
                             </div>
                         </div>
                     </div>
